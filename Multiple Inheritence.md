@@ -25,5 +25,36 @@ To write a Python program to calculate **Add, Sub & Division** using **Multiple 
 
 ## 💻 Program 
 Add code here
-## Output Example
+```
+class Calculation1:
+    def Summation(self, a, b):
+        return a + b
 
+class Calculation2:
+    def Subtraction(self, a, b):
+        return a - b
+
+class Derived(Calculation1, Calculation2):
+    def Division(self, a, b):
+        if b != 0:
+            return a / b
+        else:
+            return "Cannot divide by zero"
+
+# Input from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Create object of Derived class
+obj = Derived()
+
+# Perform operations
+print("Addition:", obj.Summation(num1, num2))
+print("Subtraction:", obj.Subtraction(num1, num2))
+print("Division:", obj.Division(num1, num2))
+
+```
+## Output Example
+<img width="423" height="265" alt="image" src="https://github.com/user-attachments/assets/1eb600ae-d28d-4bfc-a577-eac1def8df7c" />
+### Result
+The program successfully demonstrates Multiple Inheritance by combining methods from Calculation1 and Calculation2 in the Derived class. It calculates and displays Addition, Subtraction, and Division of two numbers entered by the user
