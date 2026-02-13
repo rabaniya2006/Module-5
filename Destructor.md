@@ -22,8 +22,25 @@ The program defines a class `Demo` with:
    - Delete the object using the `del` keyword.
 ## Program
 Add code Here
+```
+class Demo:
+    def __init__(self):
+        self.status = "Alive"
+        print("Object created. Status is:", self.status)
+    
+    def __del__(self):
+        print("Destructor called. Object is being destroyed.")
 
+# Create an object
+obj = Demo()
+
+# Delete the object
+del obj
+
+```
 ## 🧪 Output
+<img width="496" height="190" alt="image" src="https://github.com/user-attachments/assets/6e87cd0e-592b-423b-94e1-bed5228696d3" />
 
-## Result
+## ResulThe program successfully demonstrates a destructor in Python, where the constructor initializes the object and the destructor is called automatically when the object is deletedt
+
 
